@@ -1,0 +1,91 @@
+/* index.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html, #root {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-wrapper {
+  background-image: url('/office.png'); /* Make sure image is in /public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.05); /* More transparent */
+  backdrop-filter: blur(30px); /* Increased blur for clearer bg reveal */
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 450px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light inner border */
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: rgba(248, 248, 248, 0.966);
+}
+
+form .form-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08); /* Slight transparency */
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+form .form-group .icon {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+form .form-group input,
+form .form-group textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+}
+
+form .form-group textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #ad2ce9;
+  color: #000;
+}
